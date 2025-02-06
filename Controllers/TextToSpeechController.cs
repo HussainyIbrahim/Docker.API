@@ -58,7 +58,7 @@ public class VoiceController : ControllerBase
             }
 
             // Generate a unique filename
-            string fileName = $"{Guid.NewGuid()}.mp3";
+            string fileName = $"out.mp3";
             string savePath = Path.Combine(_env.WebRootPath, "voice", fileName);
 
             // Ensure the voice directory exists
